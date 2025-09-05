@@ -1,0 +1,153 @@
+/* Reset margin dan padding untuk semua elemen */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style umum body */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  padding: 30px;
+  line-height: 1.6;
+}
+
+/* Judul utama */
+h1 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+/* Link kembali ke daftar case */
+a {
+  display: block; /* Ubah dari inline-block ke block agar bisa diatur margin otomatis */
+  margin: 20px auto; /* Atur margin atas-bawah 20px dan otomatis di kiri-kanan agar di tengah */
+  padding: 10px 15px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.2s;
+  width: fit-content; /* Sesuaikan lebar sesuai isi */
+}
+a:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+/* Heading Catatan / Progress */
+h2 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 1.8em;
+  color: #2c3e50;
+  text-align: center;
+}
+
+/* Daftar catatan */
+ul {
+  list-style: none;
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+  padding: 0;
+}
+
+/* Item catatan */
+li {
+  background-color: #fff;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+li:hover {
+  background-color: #f1f1f1;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Teks tanggal di catatan */
+li strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #7f8c8d;
+  font-size: 0.9em;
+}
+
+/* Form tambah catatan */
+form {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Textarea input */
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  border: 2px solid #dfe6e9;
+  border-radius: 8px;
+  font-size: 1em;
+  resize: vertical;
+  min-height: 80px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+textarea:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+  outline: none;
+}
+
+/* Tombol simpan */
+button {
+  align-self: flex-start;
+  padding: 12px 25px;
+  background-color: #3498db;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+/* Modal styles */
+#imgModal {
+  display: none; /* Default hide */
+  position: fixed;
+  z-index: 9999;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+#imgModal img {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 80%;
+}
+#imgModal span {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
