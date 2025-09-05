@@ -1,0 +1,151 @@
+/* Reset margin dan padding */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body dan layout utama */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #f4f6f8;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  color: #333;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Form input area */
+form {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+label {
+  font-size: 1.2em;
+  margin-bottom: 8px;
+  display: block;
+  font-weight: 600;
+  color: #34495e;
+  width: 100%;
+}
+
+/* Input text */
+input[type="text"] {
+  flex: 1;
+  padding: 12px 20px;
+  border: 2px solid #dfe6e9;
+  border-radius: 8px;
+  font-size: 1em;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+  outline: none;
+}
+
+/* Button styles */
+button {
+  padding: 12px 25px;
+  background-color: #3498db;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+/* List styling */
+ul {
+  list-style: none;
+  width: 100%;
+  max-width: 600px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+/* List item */
+li {
+  background-color: #fff;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+li:hover {
+  background-color: #f1f1f1;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Checkbox */
+li input[type="checkbox"] {
+  margin-right: 20px;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+/* Label */
+li label {
+  flex: 1;
+  font-size: 1.2em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+li input[type="checkbox"]:checked + label {
+  color: #7f8c8d;
+  text-decoration: line-through;
+}
+
+/* Hapus link */
+li a {
+  color: #e74c3c;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: 600;
+  transition: color 0.3s, transform 0.2s;
+}
+
+li a:hover {
+  color: #c0392b;
+  transform: translateY(-2px);
+}
+
+/* Strikethrough style untuk yang selesai */
+del {
+  color: #95a5a6;
+  font-style: italic;
+  text-decoration: line-through;
+}
